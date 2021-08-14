@@ -1,0 +1,215 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  margin-top: 0px;
+}
+
+.container {
+  display: grid;
+  height: auto;
+  max-width: 100%;
+  width: 1150px;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: 0.1fr 0.1fr 2.2fr 1.2fr;
+  grid-template-areas:
+    "nav nav"
+    "header header"
+    "content1 content2";
+  grid-gap: 0rem;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #000000;
+  text-align: center;
+  margin: auto;
+}
+
+nav {
+  background: #a7ffeb;
+  grid-area: nav;
+}
+#navbar {
+  background: rgb(211, 211, 211);
+  display: flex;
+}
+
+#navbar ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  width: 50%;
+  margin-right: auto;
+}
+ul li {
+  padding: 2px;
+  list-style: none;
+}
+ul li a {
+  color: rgb(0, 0, 0);
+  display: block;
+  text-decoration: none;
+  font-weight: bold;
+}
+header {
+  grid-area: header;
+}
+
+header img {
+  margin: auto;
+  max-width: 100%;
+  height: auto;
+}
+
+#content1 {
+  grid-area: content1;
+  padding-left: 10px;
+  text-align: left;
+}
+.content {
+  margin-top: 10px;
+}
+
+#content2 {
+  grid-area: content2;
+}
+#content2 img {
+  margin: auto;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 10px 0 0 auto; /* Centred */
+}
+
+.col-50 .contact_title {
+  font-size: 25px;
+  margin-top: 40px;
+}
+
+footer {
+  margin: auto;
+  grid-area: footer;
+}
+
+a {
+  text-align: center;
+  display: block;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 1rem;
+}
+.sticky {
+  position: fixed;
+  width: 1150px;
+  margin: auto;
+}
+@media only screen and (max-width: 550px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.1fr 0.4fr auto auto;
+    grid-template-areas:
+      "nav"
+      "header"
+      "content1"
+      "content2";
+  }
+  #content2 img {
+    margin: auto;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 0 auto; /* Centred */
+  }
+}
+
+/* form input */
+* {
+  box-sizing: border-box;
+}
+
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type="submit"] {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type="submit"]:hover {
+  background-color: #ccc5cc;
+}
+
+.modalDialog {
+  border-radius: 5px;
+  /* background-color: #f2f2f2; */
+  padding: 20px;
+  max-width: 900px !important;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+.col-50 {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+}
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+.contact_form {
+  text-align: right;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25,
+  .col-50,
+  .col-75,
+  input[type="submit"] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+.has-error{
+  color: crimson;
+}
+
+@import url('//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-theme.min.css');
+
+body {
+    margin: 10px;
+}
+
+
+.modal.fade{
+-webkit-transition:opacity .3s linear, top .3s ease-out;
+-moz-transition:opacity .3s linear, top .3s ease-out;
+-ms-transition:opacity .3s linear, top .3s ease-out;
+-o-transition:opacity .3s linear, top .3s ease-out;
+transition:opacity .3s linear, top .3s ease-out;
+top:-25%;}
