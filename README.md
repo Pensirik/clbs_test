@@ -14,9 +14,16 @@
 -   php artisan migrate
 -   php artisan db:seed --class=FormfieldSeeder
 
+### or download database 
+<p align="left">
+  <a href="https://github.com/Pensirik/clbs_test/blob/main/public/webdev.sql"> webdev.sql </a>
+</p>
+
 ### run test
 
 -   php artisan serve
+
+
 
 ### screenshot
 
