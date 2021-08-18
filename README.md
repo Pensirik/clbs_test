@@ -1,6 +1,6 @@
 ### install
 
--   git clone https://github.com/Pensirik/clbstest.git
+-   git clone https://github.com/Pensirik/clbs_test.git
 -   cd to project
 -   edit your .env file and change to your database name , username, password
 -   DB_DATABASE=webdev
